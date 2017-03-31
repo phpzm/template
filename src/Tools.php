@@ -16,7 +16,6 @@ class Tools
     protected $data;
 
     /**
-     * @SuppressWarnings("BooleanArgumentFlag")
      *
      * @param string $path
      * @param bool $print
@@ -32,7 +31,6 @@ class Tools
     }
 
     /**
-     * @SuppressWarnings("BooleanArgumentFlag")
      *
      * @param bool $print
      * @return string
@@ -60,7 +58,6 @@ class Tools
     }
 
     /**
-     * @SuppressWarnings("BooleanArgumentFlag")
      *
      * @param string $path
      * @param bool $print
@@ -72,7 +69,6 @@ class Tools
     }
 
     /**
-     * @SuppressWarnings("BooleanArgumentFlag")
      *
      * @param string $path
      * @param bool $print
@@ -84,7 +80,6 @@ class Tools
     }
 
     /**
-     * @SuppressWarnings("BooleanArgumentFlag")
      *
      * @param string $path
      * @param bool $print
@@ -96,7 +91,6 @@ class Tools
     }
 
     /**
-     * @SuppressWarnings("BooleanArgumentFlag")
      *
      * @param $path
      * @param bool $print

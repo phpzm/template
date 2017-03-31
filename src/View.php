@@ -99,7 +99,6 @@ class View extends Tools
     }
 
     /**
-     * @SuppressWarnings("BooleanArgumentFlag")
      *
      * @param $name
      * @param bool $print
