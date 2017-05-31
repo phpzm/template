@@ -9,6 +9,11 @@ namespace Simples\Template;
 class View extends Tools
 {
     /**
+     * @trait Mustache
+     */
+    use Mustache;
+
+    /**
      * @var string
      */
     private $root;
@@ -76,12 +81,14 @@ class View extends Tools
             $callable = include $filename;
 
             if (is_callable($callable)) {
-                call_user_func_array($callable, array_values($data));
+                call_user_func_array($callable, [$data]);
             }
         }
         $content = ob_get_contents();
-
-        ob_end_clean();
+        if ($content) {
+            $content = $this->resolveMustaches($content, $data);
+            ob_end_clean();
+        }
 
         return $content;
     }
