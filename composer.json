@@ -10,7 +10,7 @@
   ],
   "homepage": "https://github.com/phpzm/template",
   "license": "MIT",
-  "version": "1.5.25",
+  "version": "1.5.27",
   "type": "package",
   "authors": [
     {
@@ -24,7 +24,7 @@
   ],
   "require": {
     "php": ">=7.0",
-    "phpzm/http": "^1.7.27"
+    "phpzm/http": "^1.7.30"
   },
   "autoload": {
     "psr-4": {
